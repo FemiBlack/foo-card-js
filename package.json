@@ -1,6 +1,6 @@
 {
   "name": "foo-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package used to create digital cards, like an e-ID",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
