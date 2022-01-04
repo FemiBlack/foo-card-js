@@ -1,0 +1,33 @@
+{
+  "name": "foo-card",
+  "version": "1.0.0",
+  "description": "A package used to create digital cards, like an e-ID",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "build": "tsc",
+    "publish-lib": "npm run build && npm publish",
+    "publish-beta": "npm run build && npm publish --tag beta",
+    "publish-dryrun": "npm run build && npm publish --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femiblack/foo-card.git"
+  },
+  "keywords": [
+    "digital",
+    "card",
+    "foocard",
+    "foo-card"
+  ],
+  "author": "Femi Black <femi.blvk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FemiBlack/foo-card-js/issues"
+  },
+  "homepage": "https://github.com/FemiBlack/foo-card-js#readme"
+}
