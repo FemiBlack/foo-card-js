@@ -1,40 +1,41 @@
 ---
-description: FooCard is a Javascript plugin that...
+description: >-
+  FooCard is a Javascript plugin that creates an easy way to generate custom
+  digitally signed identity cards.
 ---
 
 # Getting started with FooCard
 
 {% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
+**Inspiration:** Ever felt like creating those custom IDs for the members of your online community? or for your users?. Well foo-card does just that. With a little spice of the Canvas API and cryptography. You can have unique online IDs
 {% endhint %}
 
 ## Installation
 
-**Got 2 minutes?** Check out a video overview of our product:n
+Here are the instructions to install foo-card and add it into your project.
 
 {% hint style="warning" %}
-**Warning**: ​Some warning info
+**Warning**: ​foo-card is still in its development stages, hence there might be a lot of changes to it, some breaking!
 {% endhint %}
 
 ```shell
-// Some cod
-in
+npm install foo-card
 ```
 
 ### Guides: Jump right in
 
 Follow our handy guides to get started on5n the basics as quickly as possible:
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
+{% content-ref url="guides/installation.md" %}
+[installation.md](guides/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
+{% content-ref url="guides/usage-guide.md" %}
+[usage-guide.md](guides/usage-guide.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
+{% content-ref url="guides/examples.md" %}
+[examples.md](guides/examples.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
@@ -45,20 +46,20 @@ Follow our handy guides to get started on5n the basics as quickly as possible:
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% hint style="info" %}
