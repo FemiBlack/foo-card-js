@@ -18,7 +18,19 @@ Here are the instructions to install foo-card and add it into your project.
 **Warning**: ​foo-card is still in its development stages, hence there might be a lot of changes to it, some breaking!
 {% endhint %}
 
-```shell
+#### Via CDN
+
+The easiest way to get started with foo-card is by using our CDN. Just add this script tag in your html and file and use it straight away.
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foocard/1.11.0/foocard.js" integrity="sha512-0zl7YOOGiAS3YQgvvooDXl3WpzIUVQ7TkK5/wW8+FjEv8MYDXyIOFOsuJ/vljcMwJ6XMc4nK3F96IWNMcm8GoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+#### Via NPM
+
+If you are using foo-card in a Node project then installing it as a dependency is the best and most customizable method.
+
+```bash
 npm install foo-card
 ```
 
@@ -40,28 +52,4 @@ Follow our handy guides to get started on5n the basics as quickly as possible:
 
 {% hint style="info" %}
 **Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
-
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
 {% endhint %}
