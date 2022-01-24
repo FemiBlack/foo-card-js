@@ -1,8 +1,48 @@
 # Usage Guide
 
-Using foo-card is as easy it as it gets
+Using foo-card is as easy it as it gets. To begin using foo-card.js first create a canvas element in your HTML file.
 
-{% code title="sample.js" %}
+```html
+<canvas id="foocard"></canvas>
+```
+
+The `id` attribute of the element should be default `#foocard`, this is what tells foo-card where it's going to be initialized. If there is a need to change the id attribute to a custom one, specify that change when creating a new `FooCard` instance
+
+```javascript
+const fc = new FooCard({
+    container: "myCustomID" //defaults to `foocard` if not specified
+    imageSrc: "../path/to/image",
+    fontFamily: "Open Sans", // use custom font-family
+    fillStyle: "white", // this is the default text color
+    outline: "none",
+});
+```
+
+```javascript
+const fc = new FooCard({
+    imageSrc: "../path/to/image",
+    fontFamily: "Open Sans", // use custom font-family
+    fillStyle: "white", // this is the default text color
+    outline: "none",
+});
+```
+
+#### Using Data URLs
+
+Foo-card also accepts using Data URLs to load image templates
+
+Simply call the `FooCard` Object using the `loadDataURL()` method
+
+```javascript
+const fc = new FooCard({
+    imageSrc: "data:uri......."
+    // ...
+});
+fc.loadDataURL().then(() => {
+    // ...
+})
+```
+
 ```javascript
 const fc = new FooCard({
     imageSrc: "card-template.jpg",
@@ -16,7 +56,6 @@ fc.loadImage().then(() => {
     fc.insertText("bottom", "RV-001", 620, 370);
 });
 ```
-{% endcode %}
 
 {% hint style="info" %}
 **Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
