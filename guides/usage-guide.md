@@ -6,7 +6,9 @@ Using foo-card is as easy it as it gets. To begin using foo-card.js first create
 <canvas id="foocard"></canvas>
 ```
 
+{% hint style="info" %}
 The `id` attribute of the element should be default `#foocard`, this is what tells foo-card where it's going to be initialized. If there is a need to change the id attribute to a custom one, specify that change when creating a new `FooCard` instance
+{% endhint %}
 
 ```javascript
 const fc = new FooCard({
@@ -56,7 +58,3 @@ fc.loadImage().then(() => {
     fc.insertText("bottom", "RV-001", 620, 370);
 });
 ```
-
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
