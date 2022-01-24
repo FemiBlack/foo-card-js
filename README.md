@@ -23,7 +23,8 @@ Here are the instructions to install foo-card and add it into your project.
 The easiest way to get started with foo-card is by using our CDN. Just add this script tag in your html and file and use it straight away.
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foocard/1.11.0/foocard.js" integrity="sha512-0zl7YOOGiAS3YQgvvooDXl3WpzIUVQ7TkK5/wW8+FjEv8MYDXyIOFOsuJ/vljcMwJ6XMc4nK3F96IWNMcm8GoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Foocard Import -->
+<script src="https://cdn.jsdelivr.net/npm/foo-card@1.0.1/dist/index.js" integrity="sha256-VxPCGijNh9pd4L4LIZljkRBZp262EO4tfk/uOS8coEw=" crossorigin="anonymous"></script>
 ```
 
 #### Via NPM
@@ -31,7 +32,11 @@ The easiest way to get started with foo-card is by using our CDN. Just add this 
 If you are using foo-card in a Node project then installing it as a dependency is the best and most customizable method.
 
 ```bash
+# NPM
 npm install foo-card
+
+# yarn
+yarn add foo-card
 ```
 
 ### Guides: Jump right in

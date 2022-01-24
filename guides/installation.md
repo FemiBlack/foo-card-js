@@ -1,13 +1,38 @@
-# Creating your first project
+---
+description: Installing Foo-Card.js
+---
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
+# Installation
+
+
+
+{% hint style="warning" %}
+**Warning**: ​foo-card is still in its development stages, hence there might be a lot of changes to it, some breaking!
 {% endhint %}
 
-## The basics
+## Via CDN
 
-Projects are containers for task lists. Think of them as a library for everything your team needs to get done to complete or ship a project.
+The easiest way to get started with foo-card is by using our CDN. Just add this script tag in your html and file and use it straight away.
 
-## Creating a project
+```html
+<!-- Foocard Import -->
+<script src="https://cdn.jsdelivr.net/npm/foo-card@1.0.1/dist/index.js" integrity="sha256-VxPCGijNh9pd4L4LIZljkRBZp262EO4tfk/uOS8coEw=" crossorigin="anonymous"></script>
+```
 
-Hit the big '+' button in your sidebar and select 'New Project' from the menu that pops up. Give your project a name, and you're good to go!
+.
+
+## Using a package manger
+
+If you are using foo-card in a Node project then installing it as a dependency is the best and most customizable method.
+
+```bash
+# NPM
+npm install foo-card
+
+# yarn
+yarn add foo-card
+```
+
+
+
+Foo-card is currently in version 1.0.1. This is the only stable version so far.
