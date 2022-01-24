@@ -47,8 +47,8 @@ Follow our handy guides to get started on5n the basics as quickly as possible:
 [installation.md](guides/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/usage-guide.md" %}
-[usage-guide.md](guides/usage-guide.md)
+{% content-ref url="guides/usage-guide/" %}
+[usage-guide](guides/usage-guide/)
 {% endcontent-ref %}
 
 {% content-ref url="guides/examples.md" %}

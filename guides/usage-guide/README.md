@@ -1,13 +1,14 @@
-# Usage Guide
+# ⚒ Usage Guide
 
 Using foo-card is as easy it as it gets. To begin using foo-card.js first create a canvas element in your HTML file.
 
 ```html
+<!-- Place in body tag -->
 <canvas id="foocard"></canvas>
 ```
 
 {% hint style="info" %}
-The `id` attribute of the element should be default `#foocard`, this is what tells foo-card where it's going to be initialized. If there is a need to change the id attribute to a custom one, specify that change when creating a new `FooCard` instance
+The `id` attribute of the element should be default `#foocard`, this is what tells foo-card where it's going to be initialized. If there is a need to change the id attribute to a custom one, specify that change when creating a new `FooCard` instance.
 {% endhint %}
 
 ```javascript
@@ -19,6 +20,8 @@ const fc = new FooCard({
     outline: "none",
 });
 ```
+
+### Loading from images
 
 ```javascript
 const fc = new FooCard({
