@@ -2,7 +2,7 @@
 description: Installing Foo-Card.js
 ---
 
-# Installation
+# ⏬ Installation
 
 
 
@@ -25,13 +25,21 @@ The easiest way to get started with foo-card is by using our CDN. Just add this 
 
 If you are using foo-card in a Node project then installing it as a dependency is the best and most customizable method.
 
-```bash
+{% tabs %}
+{% tab title="npm" %}
+```
 # NPM
 npm install foo-card
+```
+{% endtab %}
 
+{% tab title="yarn" %}
+```
 # yarn
 yarn add foo-card
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
