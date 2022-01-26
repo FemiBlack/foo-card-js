@@ -8,9 +8,6 @@ description: >-
 
 **Inspiration:** Ever felt like creating those custom IDs for the members of your online community? or for your users?. Well foo-card does just that. With a little spice of the Canvas API and cryptography. You can have unique online IDs.
 
-* [x] cxcc
-* [x] fggf
-
 ## Installation
 
 Here are the instructions to install foo-card and add it into your project.
