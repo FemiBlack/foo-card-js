@@ -6,9 +6,7 @@ description: >-
 
 # Getting started with FooCard
 
-{% hint style="info" %}
-**Inspiration:** Ever felt like creating those custom IDs for the members of your online community? or for your users?. Well foo-card does just that. With a little spice of the Canvas API and cryptography. You can have unique online IDs
-{% endhint %}
+**Inspiration:** Ever felt like creating those custom IDs for the members of your online community? or for your users?. Well foo-card does just that. With a little spice of the Canvas API and cryptography. You can have unique online IDs.
 
 ## Installation
 
@@ -47,12 +45,12 @@ Follow our handy guides to get started on5n the basics as quickly as possible:
 [installation.md](guides/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/usage-guide/" %}
-[usage-guide](guides/usage-guide/)
+{% content-ref url="guides/importing-foocard.md" %}
+[importing-foocard.md](guides/importing-foocard.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/examples.md" %}
-[examples.md](guides/examples.md)
+{% content-ref url="guides/usage-guide/" %}
+[usage-guide](guides/usage-guide/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
