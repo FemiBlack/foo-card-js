@@ -6,7 +6,9 @@ description: >-
 
 # Getting started with FooCard
 
+{% hint style="info" %}
 **Inspiration:** Ever felt like creating those custom IDs for the members of your online community? or for your users?. Well foo-card does just that. With a little spice of the Canvas API and cryptography. You can have unique online IDs.
+{% endhint %}
 
 FooCard comes with so many configuration options which you can use to customize your card and make beautiful templates.
 
