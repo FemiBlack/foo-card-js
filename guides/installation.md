@@ -7,7 +7,7 @@ description: Installing Foo-Card.js
 
 
 {% hint style="warning" %}
-**Warning**: ​foo-card is still in its development stages, hence there might be a lot of changes to it, some breaking!
+**Warning**: ​foo-card is still in its development stages, hence there might be a lot of changes to it, some breaking!. It is advisable to use version **1.0.1**. This is the only stable version so far.
 {% endhint %}
 
 ## Via CDN
@@ -43,4 +43,3 @@ yarn add foo-card
 
 
 
-Foo-card is currently in version 1.0.1. This is the only stable version so far.

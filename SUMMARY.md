@@ -5,6 +5,7 @@
 ## Guides
 
 * [⏬ Installation](guides/installation.md)
+* [✅ Importing FooCard](guides/importing-foocard.md)
 * [⚒ Usage Guide](guides/usage-guide/README.md)
   * [Configuration Options](guides/usage-guide/configuration-options.md)
 * [Examples](guides/examples.md)
