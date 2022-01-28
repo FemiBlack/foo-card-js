@@ -14,7 +14,9 @@ interface CardProps {
   textBaseline?: CanvasTextBaseline;
   imageSrc: string;
 }
-
+/**
+ * Initializes the FooCard Class
+ */
 export class FooCard {
   public static readonly defaultValues = {
     container: "#foocard",
@@ -31,6 +33,10 @@ export class FooCard {
     imageSrc: null,
   };
 
+  /**
+   *
+   * @param { CardProps } options - Custom Configuration options for FooCard Instance
+   */
   public constructor(options: CardProps) {
     this.__init__(options);
   }
@@ -72,7 +78,6 @@ export class FooCard {
 
         let canvas = this.canvas;
         canvas.width = canvas.height = 0;
-
       } else {
         throw new Error("Enter valid container...");
       }
@@ -81,6 +86,11 @@ export class FooCard {
     }
   }
 
+  /**
+   * Function to load image onto canvas
+   * @returns { void }
+   */
+
   public async loadImage() {
     const { imageSrc } = FooCard.defaultValues;
     let img: HTMLImageElement = new Image();
@@ -88,21 +98,59 @@ export class FooCard {
     await img.decode();
     this._initCanvasDefaultStyle(img);
   }
-  public downloadImage() {
-    const {canvas} = this
-    let link = document.createElement('a');
-    link.href = canvas.toDataURL();
-    link.download = "masterpiece.png";
-    link.click()
-    link.remove()
+  /**
+   * Downloads unsigned image into default download location
+   *
+   * @param { String } imageName - Name of the image to be downloaded. Defaults to 'footemplate`
+   * @param { String } imageExtension - File format of the image to be downloaded, accepted formats are [jpg, jpeg, png]. Defaults to png
+   */
+  public downloadImage(
+    imageName: string = "footemplate",
+    imageExtension: string = "png"
+  ) {
+    if (imageExtension in ["png", "jpg", "jpeg"]) {
+      const { canvas } = this;
+      let link = document.createElement("a");
+      link.href = canvas.toDataURL();
+      link.download = `${imageName || "footemplate"}.${imageExtension}`;
+      link.click();
+      link.remove();
+    } else {
+      throw new Error(
+        "Error: The image extension has to be in png or jpg format"
+      );
+    }
+  }
+  /**
+   * Downloads image as a signed and unique copy
+   *
+   * @param { String } imageName - Name of the image to be downloaded. Defaults to 'footemplate`
+   * @param { String } imageExtension - File format of the image to be downloaded, accepted formats are [jpg, jpeg, png]. Defaults to png
+   * @param { Object } metadata - Custom metadata to append to image, can be read using any ezqif library
+   */
+
+  public downloadImageAsSigned(
+    imageName: string = "signed_footemplate",
+    imageExtension: string = "png",
+    metadata: {}
+  ) {
+    if (imageExtension in ["png", "jpg", "jpeg"]) {
+      // image embedding goes here
+      // add ezqif metadata
+      // add custom ezqif metadata
+    } else {
+      throw new Error(
+        "Error: The image extension has to be in png or jpg format"
+      );
+    }
   }
 
   /**
    *
-   * @param { any } img - Image source
+   * @param { HTMLImageElement } img - Image source
    */
 
-  private _initCanvasDefaultStyle(img: any): void {
+  private _initCanvasDefaultStyle(img: HTMLImageElement): void {
     const { canvas, context } = this;
     const { outlineOffset, outline } = FooCard.defaultValues;
     utilityDOM.setCss(canvas, {
@@ -120,6 +168,7 @@ export class FooCard {
   }
 
   /**
+   * Inserts text element into the canvas
    *
    * @param { CanvasTextBaseLine } baseline - canvasBaseline to postion text baseline
    * @param { String } text - Text to be drawn on the canvas
@@ -156,8 +205,14 @@ export class FooCard {
     context.fillText(text, xAxis, yAxis, maxWidth); // (text,x,y,max-width)
   }
 
-  public clearCanvas(): void {
+  /**
+   * Clears the state the current working canvas
+   * 
+   * @param { Boolean } keepSize - Keeps the current shape of the canvas
+   * @returns { Void }
+   */
+  public clearCanvas(keepSize = true): void {
     const { canvas, context } = this;
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, keepSize?canvas.width:0, keepSize?canvas.height:0);
   }
 }
