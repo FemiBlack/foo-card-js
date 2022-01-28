@@ -8,7 +8,7 @@ Welcome to **FooCard**. FooCard is a Javascript library used to create unique an
 <a href="https://femi-black.gitbook.io/foocard-docs/" target="_blank"><img src="https://github.com/FemiBlack/foo-card-js/raw/main/images/foo.png" style="width:300px;box-shadow:rgba(0,0,0,0.3) 0 0 5px"></a>
 
 ## Quick Setup
-First install FooCard form npm
+First install FooCard from npm
 ```bash
 npm install foo-card
 ```
