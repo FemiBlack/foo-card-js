@@ -1,6 +1,5 @@
 # FooCard
 [![NPM version](https://badge.fury.io/js/foo-card.svg)](http://badge.fury.io/js/fabric)
-
 [![Downloads per month](https://img.shields.io/npm/dm/foo-card.svg)](https://www.npmjs.org/package/foo-card)
 
 Welcome to **FooCard**. FooCard is a Javascript library used to create unique and digitally signed identity cards or any custom user generated images.
